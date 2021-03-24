@@ -2,7 +2,7 @@ package secondTask
 
 class TreesCompare extends ITreesCompare {
 
-  def isSameTree[X](p: Option[TreeNode[X]], q: Option[TreeNode[X]]): Boolean = Array(p,q) match {
+  override def isSameTree[X](p: Option[TreeNode[X]], q: Option[TreeNode[X]]): Boolean = Array(p,q) match {
     case Array(Some(x), Some(y))
       if ((Some(x).isDefined && Some(y).isDefined)
         && (Some(x).get.value == Some(y).get.value)
