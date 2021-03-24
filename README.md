@@ -34,4 +34,4 @@ def isSameTree[X](p: Option[TreeNode[X]], q: Option[TreeNode[X]]): Boolean = {
  assert(!isSameTree(Some(p), Some(q)))
 ```
 #
-3. Написать программу, которая принимает строку в консоли и говорит это валидный email или нет 
+###### 3. Написать программу, которая принимает строку в консоли и говорит это валидный email или нет
