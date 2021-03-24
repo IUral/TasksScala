@@ -5,8 +5,7 @@ import scala.collection.mutable
 
 class StringGroupBySortJoin extends IStringGroupBySortJoin {
 
-  @Override
-  def declarativeStyleGroupBySortJoin(str: String): String = {
+  override def declarativeStyleGroupBySortJoin(str: String): String = {
     val cache: mutable.HashMap[Char, Int] = mutable.HashMap()
     var result = ""
     for(char <- str) {
@@ -24,8 +23,7 @@ class StringGroupBySortJoin extends IStringGroupBySortJoin {
     result
   }
 
-  @Override
-  def functionStyleGroupBySortJoin(str: String): String = {
+  override def functionStyleGroupBySortJoin(str: String): String = {
     str.groupBy(identity)
       .toList
       .sortBy(-_._2.length)
