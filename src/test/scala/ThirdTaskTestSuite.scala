@@ -4,16 +4,16 @@ import thirdTask.EmailValid
 class ThirdTaskTestSuite extends AnyFunSuite{
 
   val emails = List(
-    ("mail@mail.ru" -> true),
-    ("4mail@mail.ru" -> true),
-    ("mail_@mail.ru" -> true),
-    ("mail@mail.ru.com" -> true),
-    ("_mail@mail.ru" -> false),
-    ("m-ail@mail.ru" -> false),
-    ("m@ail@mail.ru" -> false),
-    ("mail@mail.ru." -> false),
-    ("mail@mail..ru" -> false),
-    ("mail@mail._ru" -> false)
+    "mail@mail.ru" -> true,
+    "4mail@mail.ru" -> true,
+    "mail_@mail.ru" -> true,
+    "mail@mail.ru.com" -> true,
+    "_mail@mail.ru" -> false,
+    "m-ail@mail.ru" -> false,
+    "m@ail@mail.ru" -> false,
+    "mail@mail.ru." -> false,
+    "mail@mail..ru" -> false,
+    "mail@mail._ru" -> false
   )
 
   val thirdTask = new EmailValid
