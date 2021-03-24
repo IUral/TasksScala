@@ -1,0 +1,6 @@
+.bsp
+.idea
+/null
+/project/**
+!/project/build.properties
+/target
